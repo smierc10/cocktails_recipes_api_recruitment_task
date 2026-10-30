@@ -52,6 +52,10 @@ python manage.py createsuperuser
 ```
 python manage.py runserver
 ```
+### 6. Check if it's working
+```
+go to 127.0.0.1:8000/api/schema/swagger-ui
+```
 
 ## Knows Issues
 - user handle (unique string identifying the user) system is redundant as it takes on the role of username and id, in more complicated system it might have some benefits but in this case it was neither needed nor useful
