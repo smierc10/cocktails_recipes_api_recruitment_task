@@ -38,7 +38,7 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 3. Load initial data (if provided)
+### 3. Load initial data
 ```
 python manage.py loaddata initial_data.json
 ```
