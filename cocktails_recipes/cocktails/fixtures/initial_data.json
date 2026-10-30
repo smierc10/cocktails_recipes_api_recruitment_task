@@ -1,0 +1,1720 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "username": "cocktail_master",
+      "email": "master@example.com",
+      "handle": "mastermixologist",
+      "password": "pbkdf2_sha256$600000$P9v...[hashed_password_here]",
+      "is_active": true,
+      "is_staff": false,
+      "is_superuser": false
+    }
+  },
+  {
+    "model": "cocktails.cocktailcategory",
+    "pk": 1,
+    "fields": {
+      "name": "Klasyczne"
+    }
+  },
+  {
+    "model": "cocktails.cocktailcategory",
+    "pk": 2,
+    "fields": {
+      "name": "Egzotyczne i Tiki"
+    }
+  },
+  {
+    "model": "cocktails.cocktailcategory",
+    "pk": 3,
+    "fields": {
+      "name": "Orzeźwiające"
+    }
+  },
+  {
+    "model": "cocktails.cocktailcategory",
+    "pk": 4,
+    "fields": {
+      "name": "Bezalkoholowe (Mocktails)"
+    }
+  },
+  {
+    "model": "cocktails.cocktailcategory",
+    "pk": 5,
+    "fields": {
+      "name": "Shot i Mocne"
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 1,
+    "fields": {
+      "name": "Biały Rum",
+      "image_url": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Tradycyjny jasny rum z trzciny cukrowej."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 2,
+    "fields": {
+      "name": "Ciemny Rum",
+      "image_url": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Dojrzewający rum o bogatym, głębokim smaku."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 3,
+    "fields": {
+      "name": "Gin",
+      "image_url": "https://images.unsplash.com/photo-1527061011665-3652c757a4d4",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Aromatyczny destylat z wyczuwalną nutą jałowca."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 4,
+    "fields": {
+      "name": "Wódka",
+      "image_url": "https://images.unsplash.com/photo-1550985616-10810253b84d",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Krystalicznie czysty, neutralny alkohol podstawa wielu drinków."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 5,
+    "fields": {
+      "name": "Tequila",
+      "image_url": "https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Meksykański trunek z niebieskiej agawy."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 6,
+    "fields": {
+      "name": "Bourbon",
+      "image_url": "https://images.unsplash.com/photo-1527061011665-3652c757a4d4",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Amerykańska whiskey z kukurydzy starzona w dębowych beczkach."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 7,
+    "fields": {
+      "name": "Whisky Szkocka",
+      "image_url": "https://images.unsplash.com/photo-1527061011665-3652c757a4d4",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Klasyczna whisky o dymnym lub słodowym profilu."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 8,
+    "fields": {
+      "name": "Triple Sec / Cointreau",
+      "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Likier pomarańczowy o wyrazistym, cytrusowym aromacie."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 9,
+    "fields": {
+      "name": "Aperol",
+      "image_url": "https://images.unsplash.com/photo-1560512823-829485b8bf24",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Włoski aperitif o gorzko-słodkim pomarańczowym smaku."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 10,
+    "fields": {
+      "name": "Campari",
+      "image_url": "https://images.unsplash.com/photo-1560512823-829485b8bf24",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Czerwony gorzki likier ziołowy z nutą pomarańczy."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 11,
+    "fields": {
+      "name": "Słodki Wermut",
+      "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Wzmocnione wino ziołowe o słodkim smaku."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 12,
+    "fields": {
+      "name": "Wytrawny Wermut",
+      "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Wytrawne wino ziołowe idealne do Martini."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 13,
+    "fields": {
+      "name": "Prosecco",
+      "image_url": "https://images.unsplash.com/photo-1560512823-829485b8bf24",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Włoskie musujące wino wytrawne."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 14,
+    "fields": {
+      "name": "Sok z cytryny",
+      "image_url": "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Świeżo wyciśnięty sok z kwaśnych cytryn."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 15,
+    "fields": {
+      "name": "Sok z limonki",
+      "image_url": "https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Świeży sok z cytrusowych limonek."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 16,
+    "fields": {
+      "name": "Sok pomarańczowy",
+      "image_url": "https://images.unsplash.com/photo-1613478223719-2ab802602423",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Sok z dojrzałych pomarańczy."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 17,
+    "fields": {
+      "name": "Sok ananasowy",
+      "image_url": "https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Słodki, tropikalny sok ananasowy."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 18,
+    "fields": {
+      "name": "Sok żurawinowy",
+      "image_url": "https://images.unsplash.com/photo-1556881286-fc6915169721",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Lekko cierpki sok z owoców żurawiny."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 19,
+    "fields": {
+      "name": "Sok z grejpfruta",
+      "image_url": "https://images.unsplash.com/photo-1613478223719-2ab802602423",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Gorzko-słodki sok ze świeżych grejpfrutów."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 20,
+    "fields": {
+      "name": "Syrop cukrowy",
+      "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Syrop rozpuszczony w proporcji 1:1 cukier do wody."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 21,
+    "fields": {
+      "name": "Syrop Grenadina",
+      "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Słodki gęsty syrop z owoców granatu."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 22,
+    "fields": {
+      "name": "Mleczko kokosowe",
+      "image_url": "https://images.unsplash.com/photo-1543362906-acfc16c67564",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Gęsty krem z miąższu kokosa."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 23,
+    "fields": {
+      "name": "Świeża miętka",
+      "image_url": "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Pachnące listki świeżej miety."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 24,
+    "fields": {
+      "name": "Angostura Bitters",
+      "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Skoncentrowana gorzka esencja ziołowa."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 25,
+    "fields": {
+      "name": "Piwo imbirowe",
+      "image_url": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Musujący napój imbirowy o pikantnym smaku."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 26,
+    "fields": {
+      "name": "Woda gazowana",
+      "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Czysta orzeźwiająca woda z bąbelkami."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 27,
+    "fields": {
+      "name": "Cola",
+      "image_url": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Popularny napój gazowany z nutą wanilii i cynamonu."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 28,
+    "fields": {
+      "name": "Tonic",
+      "image_url": "https://images.unsplash.com/photo-1527061011665-3652c757a4d4",
+      "is_alcoholic": false,
+      "is_vegan": true,
+      "description": "Musujący napój gazowany z chininą."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 29,
+    "fields": {
+      "name": "Śmietanka 30%",
+      "image_url": "https://images.unsplash.com/photo-1550583724-b2692b85b150",
+      "is_alcoholic": false,
+      "is_vegan": false,
+      "description": "Gęsta śmietanka mleczna."
+    }
+  },
+  {
+    "model": "cocktails.ingredient",
+    "pk": 30,
+    "fields": {
+      "name": "Kahlúa / Likier kawowy",
+      "image_url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87",
+      "is_alcoholic": true,
+      "is_vegan": true,
+      "description": "Meksykański likier kawowy z rumem."
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 1,
+    "fields": {
+      "name": "Mojito",
+      "author": 1,
+      "category": 1,
+      "instructions": "Zgnieć listki mięty z syropem cukrowym i sokiem z limonki w szklance. Dodaj rum, kruszony lód, uzupełnij wodą gazowaną i delikatnie wymieszaj."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 1,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 23,
+      "amount": 10.0,
+      "unit": "g"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 2,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 20,
+      "amount": 20.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 3,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 15,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 4,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 1,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 5,
+    "fields": {
+      "recipe": 1,
+      "ingredient": 26,
+      "amount": 60.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 2,
+    "fields": {
+      "name": "Daiquiri",
+      "author": 1,
+      "category": 1,
+      "instructions": "Wstrząśnij biały rum, sok z limonki oraz syrop cukrowy w shakerze z lodem. Przecedź do schłodzonego kieliszka."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 6,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 1,
+      "amount": 60.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 7,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 15,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 8,
+    "fields": {
+      "recipe": 2,
+      "ingredient": 20,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 3,
+    "fields": {
+      "name": "Margarita",
+      "author": 1,
+      "category": 1,
+      "instructions": "Obrzeże szklanki przetrzyj limonką i zanurz w soli. Wstrząśnij tequilę, likier pomarańczowy oraz sok z limonki w shakerze z lodem i przelej do szklanki."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 9,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 5,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 10,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 8,
+      "amount": 20.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 11,
+    "fields": {
+      "recipe": 3,
+      "ingredient": 15,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 4,
+    "fields": {
+      "name": "Old Fashioned",
+      "author": 1,
+      "category": 1,
+      "instructions": "Wymieszaj syrop cukrowy z Angosturą w szklance. Dodaj kostki lodu oraz bourbon, wymieszaj mocno do schłodzenia."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 12,
+    "fields": {
+      "recipe": 4,
+      "ingredient": 6,
+      "amount": 60.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 13,
+    "fields": {
+      "recipe": 4,
+      "ingredient": 20,
+      "amount": 10.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 14,
+    "fields": {
+      "recipe": 4,
+      "ingredient": 24,
+      "amount": 3.0,
+      "unit": "krople"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 5,
+    "fields": {
+      "name": "Negroni",
+      "author": 1,
+      "category": 1,
+      "instructions": "Wlej gin, Campari i słodki wermut bezpośrednio do szklanki z lodem. Wymieszaj delikatnie i udekoruj skórką z pomarańczy."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 15,
+    "fields": {
+      "recipe": 5,
+      "ingredient": 3,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 16,
+    "fields": {
+      "recipe": 5,
+      "ingredient": 10,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 17,
+    "fields": {
+      "recipe": 5,
+      "ingredient": 11,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 6,
+    "fields": {
+      "name": "Dry Martini",
+      "author": 1,
+      "category": 1,
+      "instructions": "Wymieszaj gin z wytrawnym wermutem w szklanicy z lodem. Odcedź do schłodzonego kieliszka do martini i dodaj oliwkę."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 18,
+    "fields": {
+      "recipe": 6,
+      "ingredient": 3,
+      "amount": 60.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 19,
+    "fields": {
+      "recipe": 6,
+      "ingredient": 12,
+      "amount": 10.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 7,
+    "fields": {
+      "name": "Piña Colada",
+      "author": 1,
+      "category": 2,
+      "instructions": "Zblenduj biały rum, mleczko kokosowe oraz sok ananasowy z lodem na gładką masę. Podawaj w wysokiej szklance z cząstką ananasa."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 20,
+    "fields": {
+      "recipe": 7,
+      "ingredient": 1,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 21,
+    "fields": {
+      "recipe": 7,
+      "ingredient": 22,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 22,
+    "fields": {
+      "recipe": 7,
+      "ingredient": 17,
+      "amount": 90.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 8,
+    "fields": {
+      "name": "Mai Tai",
+      "author": 1,
+      "category": 2,
+      "instructions": "Wstrząśnij ciemny rum, biały rum, Triple Sec, sok z limonki i syrop cukrowy z lodem. Przelej do szklanki z kruszonym lodem."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 23,
+    "fields": {
+      "recipe": 8,
+      "ingredient": 1,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 24,
+    "fields": {
+      "recipe": 8,
+      "ingredient": 2,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 25,
+    "fields": {
+      "recipe": 8,
+      "ingredient": 8,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 26,
+    "fields": {
+      "recipe": 8,
+      "ingredient": 15,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 27,
+    "fields": {
+      "recipe": 8,
+      "ingredient": 20,
+      "amount": 10.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 9,
+    "fields": {
+      "name": "Bahama Mama",
+      "author": 1,
+      "category": 2,
+      "instructions": "Połącz ciemny rum, mleczko kokosowe oraz soki: ananasowy i pomarańczowy w shakerze z lodem. Mocno wstrząśnij i przelej do szklanki."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 28,
+    "fields": {
+      "recipe": 9,
+      "ingredient": 2,
+      "amount": 40.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 29,
+    "fields": {
+      "recipe": 9,
+      "ingredient": 22,
+      "amount": 20.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 30,
+    "fields": {
+      "recipe": 9,
+      "ingredient": 17,
+      "amount": 60.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 31,
+    "fields": {
+      "recipe": 9,
+      "ingredient": 16,
+      "amount": 60.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 10,
+    "fields": {
+      "name": "Tequila Sunrise",
+      "author": 1,
+      "category": 2,
+      "instructions": "Wlej tequilę i sok pomarańczowy do wysokiej szklanki z lodem. Powoli wlej grenadinę po ściance, aby opadła na dno."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 32,
+    "fields": {
+      "recipe": 10,
+      "ingredient": 5,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 33,
+    "fields": {
+      "recipe": 10,
+      "ingredient": 16,
+      "amount": 120.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 34,
+    "fields": {
+      "recipe": 10,
+      "ingredient": 21,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 11,
+    "fields": {
+      "name": "Zombie",
+      "author": 1,
+      "category": 2,
+      "instructions": "Wstrząśnij biały rum, ciemny rum, sok z limonki, sok pomarańczowy oraz grenadinę z kruszonym lodem. Przelej do wysokiej szklanki."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 35,
+    "fields": {
+      "recipe": 11,
+      "ingredient": 1,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 36,
+    "fields": {
+      "recipe": 11,
+      "ingredient": 2,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 37,
+    "fields": {
+      "recipe": 11,
+      "ingredient": 15,
+      "amount": 20.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 38,
+    "fields": {
+      "recipe": 11,
+      "ingredient": 16,
+      "amount": 40.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 39,
+    "fields": {
+      "recipe": 11,
+      "ingredient": 21,
+      "amount": 10.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 12,
+    "fields": {
+      "name": "Blue Hawaiian",
+      "author": 1,
+      "category": 2,
+      "instructions": "Zblenduj rum, sok ananasowy, mleczko kokosowe i Triple Sec z lodem do uzyskania mrożonej konsystencji."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 40,
+    "fields": {
+      "recipe": 12,
+      "ingredient": 1,
+      "amount": 40.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 41,
+    "fields": {
+      "recipe": 12,
+      "ingredient": 17,
+      "amount": 90.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 42,
+    "fields": {
+      "recipe": 12,
+      "ingredient": 22,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 43,
+    "fields": {
+      "recipe": 12,
+      "ingredient": 8,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 13,
+    "fields": {
+      "name": "Aperol Spritz",
+      "author": 1,
+      "category": 3,
+      "instructions": "Wypełnij kieliszek do wina lodem. Wlej Prosecco, Aperol i dopraw wodą gazowaną. Delikatnie zamieszaj i udekoruj plastrem pomarańczy."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 44,
+    "fields": {
+      "recipe": 13,
+      "ingredient": 13,
+      "amount": 90.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 45,
+    "fields": {
+      "recipe": 13,
+      "ingredient": 9,
+      "amount": 60.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 46,
+    "fields": {
+      "recipe": 13,
+      "ingredient": 26,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 14,
+    "fields": {
+      "name": "Gin & Tonic",
+      "author": 1,
+      "category": 3,
+      "instructions": "Wypełnij wysoką szklankę lodem, wlej gin, a następnie dopełnij tonikiem. Zamieszaj delikatnie."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 47,
+    "fields": {
+      "recipe": 14,
+      "ingredient": 3,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 48,
+    "fields": {
+      "recipe": 14,
+      "ingredient": 28,
+      "amount": 150.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 15,
+    "fields": {
+      "name": "Moscow Mule",
+      "author": 1,
+      "category": 3,
+      "instructions": "Połącz wódkę i sok z limonki w miedzianym kubku wypełnionym lodem. Uzupełnij piwem imbirowym i lekko zamieszaj."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 49,
+    "fields": {
+      "recipe": 15,
+      "ingredient": 4,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 50,
+    "fields": {
+      "recipe": 15,
+      "ingredient": 15,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 51,
+    "fields": {
+      "recipe": 15,
+      "ingredient": 25,
+      "amount": 120.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 16,
+    "fields": {
+      "name": "Cuba Libre",
+      "author": 1,
+      "category": 3,
+      "instructions": "Napełnij szklankę lodem, wlej rum i sok z limonki, po czym dopełnij colą. Wymieszaj."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 52,
+    "fields": {
+      "recipe": 16,
+      "ingredient": 1,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 53,
+    "fields": {
+      "recipe": 16,
+      "ingredient": 15,
+      "amount": 10.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 54,
+    "fields": {
+      "recipe": 16,
+      "ingredient": 27,
+      "amount": 120.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 17,
+    "fields": {
+      "name": "Whisky Sour",
+      "author": 1,
+      "category": 3,
+      "instructions": "Wstrząśnij bourbon, sok z cytryny i syrop cukrowy z lodem w shakerze. Odcedź do szklanki z kostkami lodu."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 55,
+    "fields": {
+      "recipe": 17,
+      "ingredient": 6,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 56,
+    "fields": {
+      "recipe": 17,
+      "ingredient": 14,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 57,
+    "fields": {
+      "recipe": 17,
+      "ingredient": 20,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 18,
+    "fields": {
+      "name": "Paloma",
+      "author": 1,
+      "category": 3,
+      "instructions": "Połącz tequilę, sok z limonki i sok z grejpfruta w szklance z lodem. Uzupełnij wodą gazowaną i delikatnie pomieszaj."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 58,
+    "fields": {
+      "recipe": 18,
+      "ingredient": 5,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 59,
+    "fields": {
+      "recipe": 18,
+      "ingredient": 15,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 60,
+    "fields": {
+      "recipe": 18,
+      "ingredient": 19,
+      "amount": 90.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 61,
+    "fields": {
+      "recipe": 18,
+      "ingredient": 26,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 19,
+    "fields": {
+      "name": "Virgin Mojito",
+      "author": 1,
+      "category": 4,
+      "instructions": "Zgnieć listki mięty z sokiem z limonki i syropem cukrowym w szklance. Zasyp lodem i dopełnij wodą gazowaną."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 62,
+    "fields": {
+      "recipe": 19,
+      "ingredient": 23,
+      "amount": 10.0,
+      "unit": "g"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 63,
+    "fields": {
+      "recipe": 19,
+      "ingredient": 15,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 64,
+    "fields": {
+      "recipe": 19,
+      "ingredient": 20,
+      "amount": 20.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 65,
+    "fields": {
+      "recipe": 19,
+      "ingredient": 26,
+      "amount": 120.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 20,
+    "fields": {
+      "name": "Virgin Piña Colada",
+      "author": 1,
+      "category": 4,
+      "instructions": "Zblenduj sok ananasowy z mleczkiem kokosowym oraz lodem na aksamitny krem. Podawaj od razu."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 66,
+    "fields": {
+      "recipe": 20,
+      "ingredient": 17,
+      "amount": 120.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 67,
+    "fields": {
+      "recipe": 20,
+      "ingredient": 22,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 21,
+    "fields": {
+      "name": "Shirley Temple",
+      "author": 1,
+      "category": 4,
+      "instructions": "Wlej piwo imbirowe oraz sok z cytryny do szklanki z lodem. Powoli wlej grenadinę i delikatnie wymieszaj."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 68,
+    "fields": {
+      "recipe": 21,
+      "ingredient": 25,
+      "amount": 150.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 69,
+    "fields": {
+      "recipe": 21,
+      "ingredient": 14,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 70,
+    "fields": {
+      "recipe": 21,
+      "ingredient": 21,
+      "amount": 20.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 22,
+    "fields": {
+      "name": "Citrus Mint Cooler",
+      "author": 1,
+      "category": 4,
+      "instructions": "Rozgnieć miętę z sokiem pomarańczowym i cytrynowym. Wypełnij szklankę lodem i zalej wodą gazowaną."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 71,
+    "fields": {
+      "recipe": 22,
+      "ingredient": 23,
+      "amount": 8.0,
+      "unit": "g"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 72,
+    "fields": {
+      "recipe": 22,
+      "ingredient": 16,
+      "amount": 60.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 73,
+    "fields": {
+      "recipe": 22,
+      "ingredient": 14,
+      "amount": 20.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 74,
+    "fields": {
+      "recipe": 22,
+      "ingredient": 26,
+      "amount": 80.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 23,
+    "fields": {
+      "name": "Virgin Sunrise",
+      "author": 1,
+      "category": 4,
+      "instructions": "Wlej sok pomarańczowy do szklanki z kostkami lodu. Delikatnie wlej syrop grenadina, pozwalając mu opaść na dno."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 75,
+    "fields": {
+      "recipe": 23,
+      "ingredient": 16,
+      "amount": 150.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 76,
+    "fields": {
+      "recipe": 23,
+      "ingredient": 21,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 24,
+    "fields": {
+      "name": "Grapefruit Fizz",
+      "author": 1,
+      "category": 4,
+      "instructions": "Wymieszaj sok z grejpfruta, sok z limonki i syrop cukrowy w szklance z lodem. Dopełnij wodą gazowaną."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 77,
+    "fields": {
+      "recipe": 24,
+      "ingredient": 19,
+      "amount": 100.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 78,
+    "fields": {
+      "recipe": 24,
+      "ingredient": 15,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 79,
+    "fields": {
+      "recipe": 24,
+      "ingredient": 20,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 80,
+    "fields": {
+      "recipe": 24,
+      "ingredient": 26,
+      "amount": 80.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 25,
+    "fields": {
+      "name": "Long Island Iced Tea",
+      "author": 1,
+      "category": 5,
+      "instructions": "Wstrząśnij wódkę, rum, gin, tequilę, Triple Sec, sok z cytryny i syrop z lodem. Przelej do wysokiej szklanki i uzupełnij colą."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 81,
+    "fields": {
+      "recipe": 25,
+      "ingredient": 4,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 82,
+    "fields": {
+      "recipe": 25,
+      "ingredient": 1,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 83,
+    "fields": {
+      "recipe": 25,
+      "ingredient": 3,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 84,
+    "fields": {
+      "recipe": 25,
+      "ingredient": 5,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 85,
+    "fields": {
+      "recipe": 25,
+      "ingredient": 8,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 86,
+    "fields": {
+      "recipe": 25,
+      "ingredient": 14,
+      "amount": 25.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 87,
+    "fields": {
+      "recipe": 25,
+      "ingredient": 20,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 88,
+    "fields": {
+      "recipe": 25,
+      "ingredient": 27,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 26,
+    "fields": {
+      "name": "Espresso Martini",
+      "author": 1,
+      "category": 5,
+      "instructions": "Dynamicznie wstrząśnij wódkę, likier kawowy i syrop cukrowy z lodem w shakerze. Odcedź do schłodzonego kieliszka cocktailowego."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 89,
+    "fields": {
+      "recipe": 26,
+      "ingredient": 4,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 90,
+    "fields": {
+      "recipe": 26,
+      "ingredient": 30,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 91,
+    "fields": {
+      "recipe": 26,
+      "ingredient": 20,
+      "amount": 10.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 27,
+    "fields": {
+      "name": "White Russian",
+      "author": 1,
+      "category": 5,
+      "instructions": "Wlej wódkę i likier kawowy do niskiej szklanki z lodem. Na wierzch wlej śmietankę i delikatnie pomieszaj."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 92,
+    "fields": {
+      "recipe": 27,
+      "ingredient": 4,
+      "amount": 50.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 93,
+    "fields": {
+      "recipe": 27,
+      "ingredient": 30,
+      "amount": 20.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 94,
+    "fields": {
+      "recipe": 27,
+      "ingredient": 29,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 28,
+    "fields": {
+      "name": "Kamikaze Shot",
+      "author": 1,
+      "category": 5,
+      "instructions": "Wstrząśnij równe części wódki, Triple Sec i świeżego soku z limonki z lodem. Przelej do kieliszków typu shot."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 95,
+    "fields": {
+      "recipe": 28,
+      "ingredient": 4,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 96,
+    "fields": {
+      "recipe": 28,
+      "ingredient": 8,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 97,
+    "fields": {
+      "recipe": 28,
+      "ingredient": 15,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 29,
+    "fields": {
+      "name": "Cosmopolitan",
+      "author": 1,
+      "category": 5,
+      "instructions": "Wstrząśnij wódkę, Triple Sec, sok z limonki i sok żurawinowy z lodem. Przelej do schłodzonego kieliszka do martini."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 98,
+    "fields": {
+      "recipe": 29,
+      "ingredient": 4,
+      "amount": 45.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 99,
+    "fields": {
+      "recipe": 29,
+      "ingredient": 8,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 100,
+    "fields": {
+      "recipe": 29,
+      "ingredient": 15,
+      "amount": 15.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 101,
+    "fields": {
+      "recipe": 29,
+      "ingredient": 18,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.cocktailrecipe",
+    "pk": 30,
+    "fields": {
+      "name": "Manhattan",
+      "author": 1,
+      "category": 5,
+      "instructions": "Wymieszaj bourbon, słodki wermut i Angosturę z lodem. Odcedź do schłodzonego kieliszka cocktailowego i udekoruj wisienką."
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 102,
+    "fields": {
+      "recipe": 30,
+      "ingredient": 6,
+      "amount": 60.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 103,
+    "fields": {
+      "recipe": 30,
+      "ingredient": 11,
+      "amount": 30.0,
+      "unit": "ml"
+    }
+  },
+  {
+    "model": "cocktails.recipeingredient",
+    "pk": 104,
+    "fields": {
+      "recipe": 30,
+      "ingredient": 24,
+      "amount": 2.0,
+      "unit": "krople"
+    }
+  }
+]
