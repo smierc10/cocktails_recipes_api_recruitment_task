@@ -12,7 +12,7 @@ Django &amp; DRF backend built as a recruitment task for SOLVRO in a form of coc
 ## Core features
 - **REST architecture** built using DRF viewsets, routers (normal and nested)
 - **custom filtering and ordering** using django-filters
-- **API Documentation **generated OpenAPI schema with interactive swagger ui
+- **API Documentation** generated OpenAPI schema with interactive swagger ui
 - **Authentication user** login system which supports staff status which allows content moderation
 - basic image upload endpoint which allows posting images to server and making them publicly available via provided url
 - a few test cases that check if basic functionality is working
@@ -26,13 +26,32 @@ Django &amp; DRF backend built as a recruitment task for SOLVRO in a form of coc
 - **Database:** SQLite (local development)
 
 ## Installation and running
-1. Download the repository
-2. cd cocktails_recipes
-3. python manage.py makemigrations
-4. python manage.py migrate
-5. python manage.py loaddata initial_data.json
-6. python manage.py createsuperuser
-7. python manage.py runserver
+### 1. Clone/download the repository and navigate into the project folder
+```
+git clone github.com/smierc10/cocktails_recipes_api_recruitment_task
+cd cocktails_recipes
+```
+
+### 2. Set up the database
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### 3. Load initial data (if provided)
+```
+python manage.py loaddata initial_data.json
+```
+
+### 4. Create an admin superuser
+```
+python manage.py createsuperuser
+```
+
+### 5. Start the development server
+```
+python manage.py runserver
+```
 
 ## Knows Issues
 - user handle (unique string identifying the user) system is redundant as it takes on the role of username and id, in more complicated system it might have some benefits but in this case it was neither needed nor useful
